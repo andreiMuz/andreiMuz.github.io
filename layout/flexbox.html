@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Example</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    header, footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+    }
+    .main {
+        display: flex;
+        flex: 1;
+    }
+    aside {
+        background-color: #f4f4f4;
+        width: 200px;
+        padding: 10px;
+    }
+    .content {
+        flex: 1;
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <div class="main">
+            <aside>
+                <h2>Sidebar</h2>
+                <p>List of links</p>
+            </aside>
+            <div class="content">
+                <h2>Content Area</h2>
+                <p>Main content goes here</p>
+            </div>
+        </div>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+</html>
 
