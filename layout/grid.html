@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Grid Example</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: grid;
+        grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+        grid-template-columns: 200px 1fr; /* Sidebar, Main Content */
+        min-height: 100vh;
+    }
+    header, footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        grid-column: 1 / span 2; /* Span across both columns */
+    }
+    aside {
+        background-color: #f4f4f4;
+        padding: 10px;
+    }
+    .content {
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <aside>
+            <h2>Sidebar</h2>
+            <p>List of links</p>
+        </aside>
+        <div class="content">
+            <h2>Content Area</h2>
+            <p>Main content goes here</p>
+        </div>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </div>
+</body>
+</html>
 
