@@ -4,7 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, main, footer {
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Media queries */
+        @media screen and (max-width: 767px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            header, nav, main, footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            main {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            article, aside {
+                width: 45%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -38,4 +91,3 @@
     </footer>
 </body>
 </html>
-
