@@ -42,3 +42,21 @@ footer {
     margin-top: 20px;
     text-align: center;
 }
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav a {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
