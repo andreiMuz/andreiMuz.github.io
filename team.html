@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Additional styles for consistency with Our Stadium page */
+        /* Additional styles for consistency */
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
@@ -25,16 +25,30 @@
             background-color: #0073e6;
             color: #fff;
             padding: 20px 0;
-            text-align: center;
+            text-align: left; /* Align left */
         }
-        header nav a {
+        header .container {
+            display: flex;
+            justify-content: flex-start; /* Move logo to the left */
+            align-items: center;
+        }
+        .top-img {
+            width: 60px;
+            height: auto;
+            margin-right: 20px;
+        }
+        nav {
+            flex-grow: 1;
+            text-align: right;
+        }
+        nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
-            transition: all 0.3s ease;
+            margin-left: 20px;
+            transition: color 0.3s ease;
         }
-        header nav a:hover {
-            color: #ccc;
+        nav a:hover {
+            color: #ffc107;
         }
         hr {
             border: none;
@@ -118,4 +132,3 @@
     </footer>
 </body>
 </html>
-
