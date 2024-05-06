@@ -66,7 +66,6 @@
         .welcome-section h2 {
             font-size: 2rem;
             margin-bottom: 20px;
-            color: #000; /* Changed color to black */
         }
         .welcome-section p {
             font-size: 1.2rem;
@@ -79,7 +78,6 @@
         .activity-section h2 {
             font-size: 2rem;
             margin-bottom: 20px;
-            color: #000; /* Changed color to black */
         }
         .activity-section p {
             font-size: 1.2rem;
@@ -169,5 +167,31 @@
             <p>&copy; 2024 Manchester City Fan Page. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Countdown Timer for Next Match
+        const nextMatchDate = new Date('2024-05-20T18:00:00');
+        
+        function updateCountdown() {
+            const now = new Date();
+            const timeDiff = nextMatchDate - now;
+
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+
+        // Change the heading color without JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const heading = document.querySelector('.welcome-section h2');
+            heading.style.color = '#000'; // Change to black
+        });
+    </script>
 </body>
 </html>
