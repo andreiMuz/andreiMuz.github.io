@@ -3,95 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manchester City Fan Page - Our Stadium</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Manchester City Fan Page</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Additional styles for modern look */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            transition: all 0.3s ease;
-        }
-        header nav a:hover {
-            color: #ccc;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #ddd;
-            margin: 20px 0;
-        }
-        section {
-            padding: 20px 0;
-            text-align: center;
-        }
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons a {
-            color: #007bff;
-            font-size: 24px;
-            margin: 0 10px;
-            transition: all 0.3s ease;
-        }
-        .social-icons a:hover {
-            color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="mancityfanpage.html"><img class="top-img" src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" alt="Man.City logo"></a>
             <nav>
-                <a href="mancityfanpage.html">Home</a>
-                <a href="team.html">Our Team</a>
-                <a href="stadium.html">Our Stadium</a>
-                <a href="fan_corner.html">Fan corner</a>
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Players</a></li>
+                    <li><a href="#">Matches</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <hr>
-
-    <section id="stadium-section">
+    <section class="hero">
         <div class="container">
-            <h2>Etihad Stadium</h2>
-            <img src="data:image/jpeg;base64,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" alt="Etihad Stadium">
+            <h1>Welcome to Manchester City Fan Page</h1>
+            <p>Your ultimate source for all things Manchester City FC.</p>
+        </div>
+    </section>
+
+    <section class="stadium">
+        <div class="container">
+            <img src="https://i.pinimg.com/originals/da/c4/25/dac4254ca173aa2de919972599249c90.jpg" alt="Etihad Stadium">
             <p>The Etihad Stadium is the home of Manchester City Football Club. Located in Manchester, England, it has a seating capacity of 53,000 and is one of the premier football stadiums in the world.</p>
             <div class="social-icons">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </section>
