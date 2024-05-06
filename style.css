@@ -9,6 +9,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1c2c5b; /* Manchester City blue */
     color: #fff; /* White text */
+    min-height: 100vh; /* Set minimum height to full viewport height */
+    display: flex;
+    flex-direction: column; /* Align content in a column */
 }
 
 .container {
@@ -26,6 +29,10 @@ header {
     width: 60px;
     height: auto;
     margin-right: 20px;
+}
+
+nav {
+    flex-grow: 1; /* Navigation takes remaining vertical space */
 }
 
 nav a {
@@ -49,8 +56,8 @@ hr {
 footer {
     background-color: #fff; /* White footer */
     padding: 10px 0;
-    margin-top: 20px;
     text-align: center;
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 footer p {
