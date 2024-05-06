@@ -7,7 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: cornflowerblue;
+    background-color: #1c2c5b; /* Manchester City blue */
+    color: #fff; /* White text */
 }
 
 .container {
@@ -16,31 +17,44 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: #fff; /* White header */
     padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.top-img {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
 }
 
 nav a {
     margin-right: 20px;
     text-decoration: none;
-    color: black;
+    color: #1c2c5b; /* Manchester City blue */
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: darkblue;
+    color: #ffc107; /* Yellow on hover */
 }
 
 hr {
     border: 0;
-    border-top: 2px solid black;
+    border-top: 2px solid #fff; /* White line */
     margin-top: 20px;
 }
 
 footer {
-    background-color: white;
+    background-color: #fff; /* White footer */
     padding: 10px 0;
     margin-top: 20px;
     text-align: center;
+}
+
+footer p {
+    color: #1c2c5b; /* Manchester City blue */
 }
 
 /* Responsive Design */
