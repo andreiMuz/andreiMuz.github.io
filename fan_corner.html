@@ -6,7 +6,7 @@
     <title>Manchester City Fan Page - Fan Corner</title>
  
     <link rel="stylesheet" href="style.css">
-    <style>
+      <style>
 
         ol {
             list-style-type: none;
@@ -55,7 +55,9 @@
             <h2>Fan Songs</h2>
             <p>If you suddenly become interested in our club and want to become a real fan and support our team, in other words, become a real “Blue,” then you definitely need to learn fan songs and chants. Let's cheer together!</p>
             <ol id="fan-songs-list">
-                <!-- Fan songs will be dynamically added here -->
+                <li><a href="https://www.goal.com/en/news/manchester-city-chants-lyrics--videos-to-the-most-popular-songs/1uqygit7h2l61ia55du60d26d#best-team">Best team in the world…</a></li>
+                <li><a href="https://www.goal.com/en/news/manchester-city-chants-lyrics--videos-to-the-most-popular-songs/1uqygit7h2l61ia55du60d26d#singing-the-blues">Singing the Blues</a></li>
+                <!-- Add more fan songs here if needed -->
             </ol>
         </div>
     </section>
@@ -65,33 +67,5 @@
             <p>&copy; 2024 Manchester City Fan Page. All rights reserved.</p>
         </div>
     </footer>
- <script>
-        // JavaScript for dynamically adding fan songs
-        document.addEventListener("DOMContentLoaded", function() {
-            const fanSongs = [
-                {
-                    title: "Best team in the world…",
-                    link: "https://www.goal.com/en/news/manchester-city-chants-lyrics--videos-to-the-most-popular-songs/1uqygit7h2l61ia55du60d26d#best-team"
-                },
-                {
-                    title: "Singing the Blues",
-                    link: "https://www.goal.com/en/news/manchester-city-chants-lyrics--videos-to-the-most-popular-songs/1uqygit7h2l61ia55du60d26d#singing-the-blues"
-                }
-                // Add more fan songs here if needed
-            ];
-
-            const fanSongsList = document.getElementById("fan-songs-list");
-
-            fanSongs.forEach(song => {
-                const listItem = document.createElement("li");
-                const link = document.createElement("a");
-                link.href = song.link;
-                link.textContent = song.title;
-                listItem.appendChild(link);
-                fanSongsList.appendChild(listItem);
-            });
-        });
-    </script>
-
 </body>
 </html>
