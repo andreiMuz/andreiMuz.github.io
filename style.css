@@ -61,18 +61,28 @@ p {
     font-size: 1.2rem;
     line-height: 1.6;
 }
-.social-icons {
-    margin-top: 20px;
+/* CSS for sticky footer and styling */
+footer {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
-.social-icons a {
-    color: #007bff;
-    font-size: 24px;
-    margin: 0 10px;
-    transition: all 0.3s ease;
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.social-icons a:hover {
-    color: #0056b3;
+
+footer p {
+    font-size: 14px;
+    margin: 0;
 }
+
 #stadium-section img {
     max-width: 100%;
     height: auto;
