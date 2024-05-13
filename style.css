@@ -61,6 +61,9 @@ p {
     font-size: 1.2rem;
     line-height: 1.6;
 }
+body {
+    padding-bottom: 60px; /* Adjust the value based on the height of your footer */
+}
 /* CSS for sticky footer and styling */
 footer {
     background-color: #0073e6;
