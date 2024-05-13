@@ -69,15 +69,25 @@ body {
     min-height: 100vh;
 }
 
-.main-content {
-    flex: 1;
-}
-
-.footer {
+footer {
     background-color: #0073e6;
     color: #fff;
     padding: 15px 20px;
     text-align: center;
+    position: relative; /* Change from fixed to relative */
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
 }
 
 #stadium-section img {
