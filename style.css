@@ -12,7 +12,9 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    padding-bottom: 80px; /* Adjust the value based on the height of your footer */
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
 }
 .container {
     max-width: 1200px;
@@ -69,10 +71,8 @@ footer {
     color: #fff;
     padding: 15px 20px;
     text-align: center;
-    position: relative; /* Change from fixed to relative */
-    bottom: 0;
+    margin-top: auto; /* Push the footer to the bottom */
     width: 100%;
-    box-sizing: border-box;
 }
 
 footer .container {
