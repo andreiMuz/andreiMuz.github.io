@@ -63,11 +63,6 @@ p {
     line-height: 1.6;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
 footer {
     background-color: #0073e6;
