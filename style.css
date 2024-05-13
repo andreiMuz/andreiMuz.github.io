@@ -12,7 +12,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    padding-bottom: 80px; /* Adjust the value based on the height of your footer */
+    padding-bottom: 800px; /* Adjust the value based on the height of your footer */
 }
 .container {
     max-width: 1200px;
