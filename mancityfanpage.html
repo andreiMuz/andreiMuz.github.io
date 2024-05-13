@@ -13,6 +13,7 @@
         <div class="container">
             <a href="mancityfanpage.html"><img class="top-img" src="https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg" alt="Man.City logo"></a>
             <nav>
+                <a href="mancityfanpage.html">Home</a>
                 <a href="team.html">Our Team</a>
                 <a href="stadium.html">Our Stadium</a>
                 <a href="fan_corner.html">Fan corner</a>
@@ -48,24 +49,7 @@
         </div>
     </footer>
 
-    <script>
-        // Countdown Timer for Next Match
-        const nextMatchDate = new Date('2024-05-20T18:00:00');
-        
-        function updateCountdown() {
-            const now = new Date();
-            const timeDiff = nextMatchDate - now;
 
-            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
-
-            document.getElementById('countdown').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        }
-
-        // Update countdown every second
-        setInterval(updateCountdown, 1000);
 
         // Change the heading color without JavaScript
         document.addEventListener('DOMContentLoaded', function() {
