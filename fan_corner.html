@@ -66,32 +66,6 @@
         </div>
     </footer>
 
-    <script>
-        // JavaScript for dynamically adding fan songs
-        document.addEventListener("DOMContentLoaded", function() {
-            const fanSongs = [
-                {
-                    title: "Best team in the world…",
-                    link: "https://www.goal.com/en/news/manchester-city-chants-lyrics--videos-to-the-most-popular-songs/1uqygit7h2l61ia55du60d26d#best-team"
-                },
-                {
-                    title: "Singing the Blues",
-                    link: "https://www.goal.com/en/news/manchester-city-chants-lyrics--videos-to-the-most-popular-songs/1uqygit7h2l61ia55du60d26d#singing-the-blues"
-                }
-                // Add more fan songs here if needed
-            ];
 
-            const fanSongsList = document.getElementById("fan-songs-list");
-
-            fanSongs.forEach(song => {
-                const listItem = document.createElement("li");
-                const link = document.createElement("a");
-                link.href = song.link;
-                link.textContent = song.title;
-                listItem.appendChild(link);
-                fanSongsList.appendChild(listItem);
-            });
-        });
-    </script>
 </body>
 </html>
